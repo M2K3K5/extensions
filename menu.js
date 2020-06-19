@@ -186,8 +186,8 @@ function searchStringOnGithub(input)
     win.focus();
 }
 
-function injectMenu() 
+function uninjectMenu() 
 {
-    var menuElements = "<div id='SebExtensionMenuDiv' style='background-color: #333; color: lime; width: 230px; height: auto; margin: 0px; padding: 0px; float: right; z-index: 99; position: fixed; right: 10px; top: 10px;'>    <header id='SebExtensionHeader' style='height: 47px; width: 100%; background-image: url(https://raw.githubusercontent.com/M2K3K5/extensions/gh-pages/Impulse%2020%20by%20seb.jpg); background-size: 100%; background-repeat: no-repeat; margin-bottom: 0px;'></header>    <h6 style='text-align: center; margin: 1px 0px 1px 0px; padding: 0px; color: lime;'>Seb's Mod Menu</h6>    <div id='SebExtensionMenuContentDiv' style='padding: 0px 10px 0px 10px; background-color: #222; margin-top: 0px; width: 200px; height: auto; margin-left: 5px; border-radius: 3px; font-size: 80%; '>                           <p style='margin-top: 0px; padding: 0px;margin-block-start: 0em; margin-block-end: 0em;'>LSD mode</p>            <p>Colour escalation</p>            <p>Darkmode</p>            <p>Random font color</p>            <p>Kill images</p>            <p>Money Clicker</p>            <p style='margin-block-end: 0em;'>Search marked text on several social media pages</p>                   </div>    <footer id='SebExtensionFooter' style='background-image: url(https://raw.githubusercontent.com/M2K3K5/extensions/gh-pages/icon2.png); background-size: 6%; background-repeat: no-repeat; width: 100%; height: 15px; margin: 2px 107px 0px 107px;'></footer></div>";
-    document.body.innerHTML += menuElements;
+    document.getElementById("SebExtensionMenuDiv").remove();
+    console.log("menu uninjected!");
 }
