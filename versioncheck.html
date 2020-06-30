@@ -45,6 +45,7 @@ function getLatestVersion()
     console.log(document.getElementsByTagName("html")[0].outerHTML);
     */
     checks++;
+    if(checks > 120) {window.location.href = window.location.href;}
     document.getElementById("btn1").innerHTML = "Stop: " + checks;
     var h = document.getElementsByTagName("head")[0];
     console.log(h.getElementsByTagName("script")[0].outerHTML);
