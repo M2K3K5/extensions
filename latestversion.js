@@ -1,1 +1,1 @@
-latestVersionWeb = 1.5;
+var latestVersionWeb = 1.5;
