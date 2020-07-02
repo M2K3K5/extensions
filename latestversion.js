@@ -1,1 +1,1 @@
-latestVersion = 1.5;
+latestVersion = 1.4;
